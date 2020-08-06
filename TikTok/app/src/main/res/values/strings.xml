@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TikTok</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_main">首页</string>
+    <string name="title_city">同城</string>
+    <string name="title_camera">相机</string>
+    <string name="title_notifications">消息</string>
+    <string name="title_home">我</string>
 </resources>

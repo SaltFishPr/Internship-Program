@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_main">
+
+    <fragment
+        android:id="@+id/navigation_main"
+        android:name="com.exercise.tiktok.ui.main.MainFragment"
+        android:label="@string/title_main"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_city"
+        android:name="com.exercise.tiktok.ui.city.CityFragment"
+        android:label="@string/title_city"
+        tools:layout="@layout/fragment_city" />
+
+    <fragment
+        android:id="@+id/navigation_camera"
+        android:name="com.exercise.tiktok.ui.camera.CameraFragment"
+        android:label="@string/title_camera"
+        tools:layout="@layout/fragment_city" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.exercise.tiktok.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.exercise.tiktok.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+</navigation>

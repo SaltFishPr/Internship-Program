@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".SignActivity" />
+        <activity android:name=".CodeActivity" />
+        <activity android:name=".NameActivity" />
+        <activity android:name=".EditActivity" />
+        <activity android:name=".PwdActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity android:name=".StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

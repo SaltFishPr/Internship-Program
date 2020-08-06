@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/video_image"
+        android:src="@drawable/user_template"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/video_small_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_like_32dp"
+        app:layout_constraintBottom_toBottomOf="@id/video_image"
+        app:layout_constraintLeft_toLeftOf="@id/video_image" />
+
+    <TextView
+        android:id="@+id/video_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="@dimen/regularFontSize"
+        app:layout_constraintBottom_toBottomOf="@id/video_small_icon"
+        app:layout_constraintLeft_toRightOf="@id/video_small_icon"
+        app:layout_constraintTop_toTopOf="@id/video_small_icon"
+        tools:text="22w" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

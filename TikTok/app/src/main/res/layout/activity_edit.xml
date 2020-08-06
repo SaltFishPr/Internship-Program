@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".EditActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:text="编辑资料"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titleSize" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/user_img_edit"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/user_template" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="点击更换头像"
+        android:textColor="@color/white"
+        android:textSize="@dimen/regularFontSize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/fontGray" />
+
+    <com.exercise.tiktok.views.SettingItem
+        android:id="@+id/user_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:setting_describe="阿亮"
+        app:setting_drawable_left="false"
+        app:setting_icon="@drawable/ic_like"
+        app:setting_title="名字" />
+
+    <com.exercise.tiktok.views.SettingItem
+        android:id="@+id/user_code_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:setting_describe="12345678"
+        app:setting_drawable_left="false"
+        app:setting_icon="@drawable/ic_like"
+        app:setting_title="抖音号" />
+
+    <com.exercise.tiktok.views.SettingItem
+        android:id="@+id/user_sign_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:setting_describe="describe"
+        app:setting_drawable_left="false"
+        app:setting_icon="@drawable/ic_like"
+        app:setting_title="简介" />
+
+    <com.exercise.tiktok.views.SettingItem
+        android:id="@+id/user_xingbie_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:setting_describe="不显示"
+        app:setting_drawable_left="false"
+        app:setting_icon="@drawable/ic_like"
+        app:setting_title="性别" />
+
+    <com.exercise.tiktok.views.SettingItem
+        android:id="@+id/user_birth_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:setting_describe="2000-01-01"
+        app:setting_drawable_left="false"
+        app:setting_icon="@drawable/ic_like"
+        app:setting_title="生日" />
+
+    <com.exercise.tiktok.views.SettingItem
+        android:id="@+id/user_location_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:setting_describe="点击设置"
+        app:setting_drawable_left="false"
+        app:setting_icon="@drawable/ic_like"
+        app:setting_title="地区" />
+
+    <com.exercise.tiktok.views.SettingItem
+        android:id="@+id/user_school_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:setting_describe="点击设置"
+        app:setting_drawable_left="false"
+        app:setting_icon="@drawable/ic_like"
+        app:setting_title="学校" />
+</LinearLayout>

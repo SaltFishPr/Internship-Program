@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="item_setting_attrs">
+        <attr name="setting_icon" format="integer" /><!--左侧图标-->
+        <attr name="setting_title" format="string" /><!--左侧标题文字-->
+        <attr name="setting_describe" format="string" /><!--右侧描述文字-->
+        <attr name="setting_drawable_left" format="boolean" /><!--左侧小图标是否显示-->
+    </declare-styleable>
+    <declare-styleable name="item_message_attrs">
+        <attr name="user_image" format="integer" /><!--头像-->
+        <attr name="user_name" format="string" /><!--昵称-->
+        <attr name="user_status" format="string" /><!--状态-->
+    </declare-styleable>
+    <declare-styleable name="item_video_card_attrs">
+        <attr name="video_image" format="integer" /><!--头像-->
+        <attr name="video_small_icon" format="integer" /><!--昵称-->
+        <attr name="video_describe" format="string" /><!--状态-->
+    </declare-styleable>
+</resources>

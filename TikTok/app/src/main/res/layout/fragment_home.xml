@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+
+    tools:context=".ui.home.HomeFragment">
+    <!--
+    头像: ic_back
+    编辑资料：user_edit
+    姓名：user_name
+    抖音号：user_account
+    简介：user_sign
+    标签一：user_flag_1
+    标签二：user_flag_2
+    获赞：user_like_count
+    关注：user_focus_count
+    粉丝：user_fan_count
+    -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/user_profile_background"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_background"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_setting"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/ic_menu"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/user_profile_1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="100dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/user_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user_template"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.2" />
+
+                <Button
+                    android:id="@+id/user_edit"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@color/colorPrimary"
+                    android:text="编辑资料"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/bigFontSize"
+                    app:layout_constraintBottom_toBottomOf="@id/user_img"
+                    app:layout_constraintRight_toLeftOf="@id/add_friends"
+                    app:layout_constraintTop_toTopOf="@id/user_img" />
+
+                <Button
+                    android:id="@+id/add_friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/colorPrimary"
+                    android:text="+好友"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/bigFontSize"
+                    app:layout_constraintBottom_toBottomOf="@id/user_img"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/user_img" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="姓名"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/bigFontSize"
+                    app:layout_constraintLeft_toLeftOf="@+id/user_img"
+                    app:layout_constraintTop_toBottomOf="@id/user_img" />
+
+                <TextView
+                    android:id="@+id/user_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="抖音号: dy908lan10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/regularFontSize"
+                    app:layout_constraintLeft_toLeftOf="@id/user_name"
+                    app:layout_constraintTop_toBottomOf="@id/user_name" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/view_span_1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/fontGray"
+                app:layout_constraintTop_toBottomOf="@id/user_profile_1" />
+
+            <LinearLayout
+                android:id="@+id/user_profile_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@id/view_span_1">
+
+                <TextView
+                    android:id="@+id/user_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个人简介"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/regularFontSize" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <TextView
+                        android:id="@+id/user_flag_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="标签一"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/regularFontSize" />
+
+                    <TextView
+                        android:id="@+id/user_flag_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/regularFontSize"
+                        tools:text="标签二" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/user_like_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14w"
+                        android:textColor="@color/fontSelected"
+                        android:textSize="@dimen/bigFontSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center|bottom"
+                        android:text=" 获赞"
+                        android:textColor="@color/fontGray"
+                        android:textSize="@dimen/regularFontSize" />
+
+                    <TextView
+                        android:id="@+id/user_focus_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="310"
+                        android:textColor="@color/fontSelected"
+                        android:textSize="@dimen/bigFontSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 关注"
+                        android:textColor="@color/fontGray"
+                        android:textSize="@dimen/regularFontSize" />
+
+                    <TextView
+                        android:id="@+id/user_fan_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="291w"
+                        android:textColor="@color/fontSelected"
+                        android:textSize="@dimen/bigFontSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 粉丝"
+                        android:textColor="@color/fontGray"
+                        android:textSize="@dimen/regularFontSize" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/tab_title"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            app:xTabIndicatorColor="@color/white"
+            app:xTabIndicatorWidth="20dp"
+            app:xTabSelectedTextColor="@color/white"
+            app:xTabTextBold="true"
+            app:xTabTextColor="#CCCCCC"
+            app:xTabTextSize="@dimen/bigFontSize" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="540dp" />
+    </LinearLayout>
+</ScrollView>
