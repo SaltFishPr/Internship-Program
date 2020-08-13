@@ -13,10 +13,10 @@ import com.exercise.tiktok.R;
 
 
 public class VideoFragment extends Fragment {
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.layout_video, container, false);
-
         return root;
     }
 }

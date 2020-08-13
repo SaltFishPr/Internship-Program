@@ -27,7 +27,7 @@ public class VideoCardItem extends ConstraintLayout {
         videoDescribe = findViewById(R.id.video_describe);
 
         videoImage.setImageDrawable(ta.getDrawable(R.styleable.item_video_card_attrs_video_image));//赋值
-        videoBtnIcon.setText(ta.getText(R.styleable.item_video_card_attrs_video_small_icon));
+        videoBtnIcon.setBackground(ta.getDrawable(R.styleable.item_video_card_attrs_video_small_icon));
         videoDescribe.setText(ta.getText(R.styleable.item_video_card_attrs_video_describe));
         //回收属性对象
         ta.recycle();

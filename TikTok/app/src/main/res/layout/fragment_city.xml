@@ -1,23 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".ui.city.CityFragment">
 
-    <TextView
-        android:id="@+id/text_dashboard"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="NMSL"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.exercise.tiktok.views.VideoCardItem
+                android:layout_width="0dp"
+                android:layout_height="240dp"
+                android:layout_weight="1"
+                app:video_image="@drawable/pic_79494729_p0"
+                app:video_small_icon="@drawable/ic_like"
+                app:video_describe="12w"/>
+            <com.exercise.tiktok.views.VideoCardItem
+                android:layout_width="0dp"
+                android:layout_height="240dp"
+                android:layout_weight="1"
+                app:video_image="@drawable/pic_70627436_p0"
+                app:video_small_icon="@drawable/ic_like"
+                app:video_describe="100w"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.exercise.tiktok.views.VideoCardItem
+                android:layout_width="0dp"
+                android:layout_height="240dp"
+                android:layout_weight="1"
+                app:video_image="@drawable/pic_80455485_p2"
+                app:video_small_icon="@drawable/ic_like"
+                app:video_describe="3.3w"/>
+            <com.exercise.tiktok.views.VideoCardItem
+                android:layout_width="0dp"
+                android:layout_height="240dp"
+                android:layout_weight="1"
+                app:video_image="@drawable/pic_80638598_p0"
+                app:video_small_icon="@drawable/ic_like"
+                app:video_describe="33w"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.exercise.tiktok.views.VideoCardItem
+                android:layout_width="0dp"
+                android:layout_height="240dp"
+                android:layout_weight="1"
+                app:video_image="@drawable/pic_83422495_p0"
+                app:video_small_icon="@drawable/ic_like"
+                app:video_describe="15w"/>
+            <com.exercise.tiktok.views.VideoCardItem
+                android:layout_width="0dp"
+                android:layout_height="240dp"
+                android:layout_weight="1"
+                app:video_image="@drawable/pic_79494729_p0"
+                app:video_small_icon="@drawable/ic_like"
+                app:video_describe="12w"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.exercise.tiktok.views.VideoCardItem
+                android:layout_width="0dp"
+                android:layout_height="240dp"
+                android:layout_weight="1"
+                app:video_image="@drawable/pic_70627436_p0"
+                app:video_small_icon="@drawable/ic_like"
+                app:video_describe="100w"/>
+            <com.exercise.tiktok.views.VideoCardItem
+                android:layout_width="0dp"
+                android:layout_height="240dp"
+                android:layout_weight="1"
+                app:video_image="@drawable/pic_80455485_p2"
+                app:video_small_icon="@drawable/ic_like"
+                app:video_describe="3.3w"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.exercise.tiktok.views.VideoCardItem
+                android:layout_width="0dp"
+                android:layout_height="240dp"
+                android:layout_weight="1"
+                app:video_image="@drawable/pic_80638598_p0"
+                app:video_small_icon="@drawable/ic_like"
+                app:video_describe="33w"/>
+            <com.exercise.tiktok.views.VideoCardItem
+                android:layout_width="0dp"
+                android:layout_height="240dp"
+                android:layout_weight="1"
+                app:video_image="@drawable/pic_83422495_p0"
+                app:video_small_icon="@drawable/ic_like"
+                app:video_describe="15w"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

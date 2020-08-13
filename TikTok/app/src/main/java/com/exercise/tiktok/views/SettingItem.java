@@ -47,5 +47,7 @@ public class SettingItem extends LinearLayout {
     public void setTitle(String titleText) {
         settingTitle.setText(titleText);
     }
-
+    public void setDescribeName (String name){
+        settingDescribe.setText(name);
+    }
 }

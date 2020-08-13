@@ -36,8 +36,8 @@ def get_method_test():
 
 
 def post_method_test():
-    url = "http://192.168.0.106:5000/remove_follow"
-    data = {"user":'1','target':'12'}
+    url = "http://192.168.0.106:5000/update_account"
+    data = {"phone":'1','account':'test'}
     res = requests.post(url=url, data=data)
     print(res.json())
 

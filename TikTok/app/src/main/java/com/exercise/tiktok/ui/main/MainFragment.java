@@ -14,6 +14,8 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.androidkun.xtablayout.XTabLayout;
 import com.exercise.tiktok.R;
+import com.exercise.tiktok.adapter.FragmentAdapter;
+import com.exercise.tiktok.fragment.ShouyeFragment;
 import com.exercise.tiktok.fragment.VideoFragment;
 
 import java.util.ArrayList;
@@ -76,53 +78,15 @@ public class MainFragment extends Fragment {
         tabTitle.addTab(tabTitle.newTab().setText("推荐"));
 
         ArrayList<Fragment> fragments = new ArrayList<>();
-        VideoFragment videoFragment = new VideoFragment();
-        fragments.add(videoFragment);
-        fragments.add(new VideoFragment());
-        MyAdapter myAdapter = new MyAdapter(getChildFragmentManager(),fragments,new String[] {"关注", "推荐"});
+        fragments.add(new ShouyeFragment());
+        fragments.add(new ShouyeFragment());
+        FragmentAdapter fragmentAdapter = new FragmentAdapter(getChildFragmentManager(),fragments,new String[] {"关注", "推荐"});
         //必须要设置title，并且title顺序与fragment顺序相对应，数量也是
         ViewPager viewPager = root.findViewById(R.id.viewpager);
-        viewPager.setAdapter(myAdapter);
+        viewPager.setAdapter(fragmentAdapter);
         tabTitle.setupWithViewPager(viewPager);
         tabTitle.getTabAt(1).select();
         return root;
     }
-
-    public class MyAdapter extends FragmentStatePagerAdapter{
-
-        private ArrayList<? extends Fragment> items;
-        private String[] mTitles;
-
-        public MyAdapter(FragmentManager fm, ArrayList< ? extends Fragment> items, String[] mTitles) {
-            super(fm);
-            this.items = items;
-            this.mTitles = mTitles;
-        }
-
-        @NonNull
-        @Override
-        public Fragment getItem(int position) {
-            return items.get(position);
-        }
-
-        @Override
-        public int getCount() {
-            return items.size()==0 ? 0 :items.size();
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return mTitles[position];
-        }
-
-        @Override
-        public int getItemPosition(Object object) {
-            return POSITION_NONE;
-
-        }
-        @Override
-        public Parcelable saveState() {
-            return null;
-        }
-    }
+    
 }

@@ -72,6 +72,9 @@ def update_password():
     phone = request.form["phone"]
     old_password = request.form["old_password"]
     new_password = request.form["new_password"]
+    print(phone)
+    print(old_password)
+    print(new_password)
     res = UserTable.query(phone)
     if res is None:
         return json.dumps({"data": '帐号不存在', "ret_code": constant.DB_FAILURE})
@@ -91,8 +94,11 @@ def update_account():
     phone = request.form["phone"]
     account = request.form["account"]
     res = UserTable.query(phone)
+    flag = UserTable.check_account(account)
     if res is None:
         return json.dumps({"data": '帐号不存在', "ret_code": constant.DB_FAILURE})
+    if flag :
+        return json.dumps({"data": '该抖音号已经存在', "ret_code": constant.DB_FAILURE})
     UserTable.update_account(phone, account)
     return json.dumps({"data": '修改成功', "ret_code": constant.DB_SUCCESS})
 

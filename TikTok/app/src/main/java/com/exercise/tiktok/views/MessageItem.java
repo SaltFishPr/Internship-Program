@@ -2,6 +2,7 @@ package com.exercise.tiktok.views;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
@@ -30,5 +31,17 @@ public class MessageItem extends ConstraintLayout {
         userStatus.setText(ta.getText(R.styleable.item_message_attrs_user_status));
         //回收属性对象
         ta.recycle();
+    }
+
+    public void setUserImage(Drawable userImage) {
+        this.userImage.setImageDrawable(userImage);
+    }
+
+    public void setUserName(String userName) {
+        this.userName.setText(userName);
+    }
+
+    public void setUserStatus(String userStatus) {
+        this.userStatus.setText(userStatus);
     }
 }

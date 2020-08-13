@@ -16,20 +16,11 @@ import com.exercise.tiktok.R;
 
 public class CityFragment extends Fragment {
 
-    private CityViewModel cityViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        cityViewModel =
-                ViewModelProviders.of(this).get(CityViewModel.class);
         View root = inflater.inflate(R.layout.fragment_city, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
-        cityViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+
         return root;
     }
 }

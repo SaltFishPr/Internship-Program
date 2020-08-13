@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.exercise.tiktok.views.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -16,23 +16,23 @@
                 android:layout_width="0dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                app:video_image="@drawable/user_template"
+                app:video_image="@drawable/pic_79494729_p0"
                 app:video_small_icon="@drawable/ic_like"
-                app:video_describe="aaa"/>
+                app:video_describe="12w"/>
             <com.exercise.tiktok.views.VideoCardItem
                 android:layout_width="0dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                app:video_image="@drawable/user_template"
+                app:video_image="@drawable/pic_70627436_p0"
                 app:video_small_icon="@drawable/ic_like"
-                app:video_describe="aaa"/>
+                app:video_describe="100w"/>
             <com.exercise.tiktok.views.VideoCardItem
                 android:layout_width="0dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                app:video_image="@drawable/user_template"
+                app:video_image="@drawable/pic_80455485_p2"
                 app:video_small_icon="@drawable/ic_like"
-                app:video_describe="aaa"/>
+                app:video_describe="3.3w"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,25 +42,52 @@
                 android:layout_width="0dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                app:video_image="@drawable/user_template"
+                app:video_image="@drawable/pic_80638598_p0"
                 app:video_small_icon="@drawable/ic_like"
-                app:video_describe="aaa"/>
+                app:video_describe="33w"/>
             <com.exercise.tiktok.views.VideoCardItem
                 android:layout_width="0dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                app:video_image="@drawable/user_template"
+                app:video_image="@drawable/pic_83422495_p0"
                 app:video_small_icon="@drawable/ic_like"
-                app:video_describe="aaa"/>
+                app:video_describe="15w"/>
             <com.exercise.tiktok.views.VideoCardItem
                 android:layout_width="0dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                app:video_image="@drawable/user_template"
+                app:video_image="@drawable/pic_79494729_p0"
                 app:video_small_icon="@drawable/ic_like"
-                app:video_describe="aaa"/>
+                app:video_describe="12w"/>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.exercise.tiktok.views.VideoCardItem
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_weight="1"
+                app:video_image="@drawable/pic_70627436_p0"
+                app:video_small_icon="@drawable/ic_like"
+                app:video_describe="100w"/>
+            <com.exercise.tiktok.views.VideoCardItem
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_weight="1"
+                app:video_image="@drawable/pic_80455485_p2"
+                app:video_small_icon="@drawable/ic_like"
+                app:video_describe="3.3w"/>
+            <com.exercise.tiktok.views.VideoCardItem
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_weight="1"
+                app:video_image="@drawable/pic_80638598_p0"
+                app:video_small_icon="@drawable/ic_like"
+                app:video_describe="33w"/>
+        </LinearLayout>
+
     </LinearLayout>
 
 
-</ScrollView>
+</com.exercise.tiktok.views.MyScrollView>

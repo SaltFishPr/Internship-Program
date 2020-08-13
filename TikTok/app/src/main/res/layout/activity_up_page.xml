@@ -3,23 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-
-    tools:context=".ui.home.HomeFragment">
-    <!--
-    头像: ic_back
-    编辑资料：user_edit
-    姓名：user_name
-    抖音号：user_account
-    简介：user_sign
-    标签一：user_flag_1
-    标签二：user_flag_2
-    获赞：user_like_count
-    关注：user_focus_count
-    粉丝：user_fan_count
-    -->
-
+    tools:context=".UpPageActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,13 +27,13 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/btn_setting"
+                android:id="@+id/back"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:background="@drawable/ic_menu"
-                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/ic_back"
+                app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -76,7 +62,7 @@
                     android:layout_height="40dp"
                     android:layout_marginEnd="5dp"
                     android:background="@color/colorPrimary"
-                    android:text="编辑资料"
+                    android:text="关注"
                     android:textColor="@color/white"
                     android:textSize="@dimen/bigFontSize"
                     app:layout_constraintBottom_toBottomOf="@id/user_img"
@@ -235,7 +221,7 @@
             app:xTabIndicatorWidth="20dp"
             app:xTabSelectedTextColor="@color/white"
             app:xTabTextBold="true"
-            app:xTabTextColor="@color/fontGray"
+            app:xTabTextColor="#CCCCCC"
             app:xTabTextSize="@dimen/bigFontSize" />
 
         <androidx.viewpager.widget.ViewPager

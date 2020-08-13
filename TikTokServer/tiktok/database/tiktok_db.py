@@ -221,6 +221,26 @@ class UserTable:
         conn.close()
 
 
+    @classmethod
+    def check_account(cls,account):
+        """
+        判断当前抖音帐号是否存在
+        :return:
+        """
+        conn = sqlite3.connect(constant.TIKTOK_DB_PATH)
+        cursor = conn.cursor()
+        sql = (
+            f"SELECT * FROM {UserEntry.TABLE_NAME} "
+            f"WHERE {UserEntry.COLUMN_ACCOUNT}='{account}'; "
+        )
+        cursor.execute(sql)
+        res = cursor.fetchall()
+        cursor.close()
+        conn.close()
+        if not res:
+            return False
+        return True
+
 
 class RelationTable:
     """

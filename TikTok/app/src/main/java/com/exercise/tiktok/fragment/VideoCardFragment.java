@@ -14,7 +14,6 @@ public class VideoCardFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.layout_video_card, container, false);
-
         return root;
     }
 }

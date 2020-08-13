@@ -3,16 +3,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
+    <VideoView
+        android:id="@+id/vv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:src="@drawable/pic_79494729_p0" />
+        android:layout_centerInParent="true"/>
+<!--    <ImageView-->
+<!--        android:id="@+id/img_video"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        android:src="@drawable/pic_79494729_p0" />-->
 
     <TextView
-        android:id="@+id/text_name"
+        android:id="@+id/name"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_alignParentStart="true"
@@ -24,10 +32,10 @@
         android:textSize="@dimen/titleSize" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/miaoshu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/text_name"
+        android:layout_alignBottom="@+id/name"
         android:layout_marginStart="10dp"
         android:layout_marginBottom="-10dp"
         android:text="这是视频的一段描述"
@@ -36,7 +44,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_up"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_alignParentTop="true"
@@ -57,7 +65,7 @@
         android:src="@drawable/ic_like" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/dianzan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView1"
@@ -78,7 +86,7 @@
         android:src="@drawable/ic_comment" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/pingluen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView2"
@@ -99,7 +107,7 @@
         android:src="@drawable/ic_share" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/zhuanfa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView3"

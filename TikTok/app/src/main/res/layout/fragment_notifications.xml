@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -94,7 +95,29 @@
         android:layout_height="0.5dp"
         android:background="@color/fontGray" />
 
+    <com.exercise.tiktok.views.MessageItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:user_image="@drawable/icon_1"
+        app:user_name="wws"
+        app:user_status="今天在线" />
+
+    <com.exercise.tiktok.views.MessageItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:user_image="@drawable/icon_2"
+        app:user_name="阿亮"
+        app:user_status="最后登录：1个月前" />
+
+    <com.exercise.tiktok.views.MessageItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:user_image="@drawable/icon_5"
+        app:user_name="wq"
+        app:user_status="最后登录：3个月前" />
+
     <ListView
+        android:id="@+id/lv_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>
